@@ -38,3 +38,25 @@ h1 {
   text-align: center;
   color: white;
 }
+
+.footer .link {
+    color:  rgb(43, 100, 43);
+    font-size: 1.2rem;
+    padding-inline-start: 20px;
+    display: inline;
+
+}
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+    text-align: center;
+    padding: 1rem 2rem;
+    padding-top: 8rem;
+
+}
+
+.list-item-inline {
+    list-style: none;
+    display: inline;
+}
