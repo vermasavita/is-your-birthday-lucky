@@ -23,6 +23,6 @@ function calculateSum(dob) {
 checkNumber.addEventListener("click", function isYourBithdayLucky() {
   var dob = dateOfBirth.value;
   var sum = calculateSum(dob);
-  if (sum && dob) compareValue(sum, luckyNumber.value);
+  if (sum&&dob) compareValue(sum, luckyNumber.value);
   else message.innerText = "don't act smart, enter both fields 😡";
 });
