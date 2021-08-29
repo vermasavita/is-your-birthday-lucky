@@ -1,0 +1,40 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(80, 21, 67);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  margin: auto;
+  width: 12rem;
+  height: 2rem;
+}
+
+.check-button {
+  display: flex;
+  margin: auto;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: rgb(80, 21, 67);
+  border-color: white;
+  color: white;
+}
+
+.disclaimer {
+  color: red;
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  color: white;
+}
