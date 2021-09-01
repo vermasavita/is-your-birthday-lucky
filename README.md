@@ -1,4 +1,4 @@
-# is-your-birthday-lucky
+# [is-your-birthday-lucky](https://isyourbirthdateluckysite.netlify.app/)
 
 This game is designed for a fun purpose only. It tells if you are luck or not by taking two inputs from user. 
 1. Birthdate
