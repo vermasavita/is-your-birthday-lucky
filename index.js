@@ -4,7 +4,6 @@ var checkNumber = document.querySelector("#check-button");
 var message = document.querySelector("#message");
 
 function compareValue(sum, checkLuckyNumber) {
-  console.log(sum, checkLuckyNumber);
   if (sum % checkLuckyNumber === 0) {
     message.innerText = "You are lucky! 😎";
   } else {
@@ -23,7 +22,7 @@ function calculateSum(dob) {
 
 checkNumber.addEventListener("click", function isYourBithdayLucky() {
   var dob = dateOfBirth.value;
-  var checkLuckyNumber = luckyNumber.value;
+  var checkLuckyNumber = Number(luckyNumber.value);
   if (checkLuckyNumber && dob) {
     var sum = calculateSum(dob);
     compareValue(sum, checkLuckyNumber);
