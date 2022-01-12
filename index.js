@@ -1,9 +1,9 @@
-var dateOfBirth = document.querySelector("#date-of-birth");
-var luckyNumber = document.querySelector("#lucky-number");
-var checkNumber = document.querySelector("#check-button");
-var message = document.querySelector("#message");
+let dateOfBirth = document.querySelector("#date-of-birth");
+let luckyNumber = document.querySelector("#lucky-number");
+let checkNumber = document.querySelector("#check-button");
+let message = document.querySelector("#message");
 
-function compareValue(sum, checkLuckyNumber) {
+const compareValue = (sum, checkLuckyNumber) => {
   if (sum % checkLuckyNumber === 0) {
     message.innerText = "You are lucky! 😎";
   } else {
@@ -11,21 +11,22 @@ function compareValue(sum, checkLuckyNumber) {
   }
 }
 
-function calculateSum(dob) {
+const calculateSum = (dob) => {
   dob = dob.replaceAll("-", "");
-  var sum = 0;
+  let sum = 0;
   for (let i = 0; i < dob.length; i++) {
     sum = sum + Number(dob.charAt(i));
   }
   return sum;
 }
 
-checkNumber.addEventListener("click", function isYourBithdayLucky() {
-  var dob = dateOfBirth.value;
-  var checkLuckyNumber = Number(luckyNumber.value);
+
+const isYourBithdayLucky = () => {
+  let dob = dateOfBirth.value;
+  let checkLuckyNumber = Number(luckyNumber.value);
   if (checkLuckyNumber > 0) {
     if (checkLuckyNumber && dob) {
-      var sum = calculateSum(dob);
+      let sum = calculateSum(dob);
       compareValue(sum, checkLuckyNumber);
     } else {
       message.innerText = "don't act smart, enter both fields 😡";
@@ -33,4 +34,6 @@ checkNumber.addEventListener("click", function isYourBithdayLucky() {
   }else{
     message.innerText = "enter valid number";
   }
-});
+};
+
+checkNumber.addEventListener("click",isYourBithdayLucky)
